@@ -1,0 +1,101 @@
+WEEEEEK 4
+_______________
+
+
+
+5/8/25
+------
+
+Java How to program - by Paul Dietel and Dietal
+
+
+Rabbit ,Q
+-------------
+Message broker between tow parties
+Server
+Dependencies amqp
+
+--> We need to create an exchange, a queue and a routing key
+
+
+PLACING ORDER
+--------------
+Login
+  |
+  |
+  V
+Add items to cart
+  |
+  |
+  V
+PLACE ORDER
+-----------
+Find the items in the cart.
+  |
+  |
+  V
+Sum up the cost and quantity of items in cart
+  |
+  |
+  V
+Total cost
+  |
+  |
+  V
+Check out
+  |
+  |
+  V
+Delivery location
+  |
+  |
+  V
+Payment method
+  |
+  |
+  V
+Order success
+-----------------------------------------------------
+
+What is loosely coupling?
+
+-------------------------------------------------------
+What is serialization?
+
+
+----------------------------------------------------------
+
+
+
+7/8/24
+-----------------------------------------------------------------------------------------
+
+
+W3C- World Wide Web Consortium 
+web standard
+
+HTML CSS and JAVASCRIPT
+DNS Resolution
+TCP/TLS Handshake
+Fetch webpage from server
+Browser parses and renders the HTML responses
+Browses handles post-load user interactions with the page
+
+
+CUI project
+GUI -> AWT, Swing - create content and how to handle events/actions and how to produce or process contents
+
+
+Constraints of markup -> Valid vs wellformed
+
+
+
+
+
+
+
+
+
+
+
+

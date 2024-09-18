@@ -1,0 +1,401 @@
+WEEK 2
+
+
+RESTAPI
+-------------------------
+https://www.restapitutorial.com/
+
+2 webservices
+REST and SOP (state)
+
+HTTPS is stateless
+REST is stateless
+
+SOP best for busines to busns
+REST best for app to app communication
+
+HTTP Methods
+
+GET
+HEAD
+OPTIONS
+TRACE
+DELETE
+PUT
+POST
+PATCH
+CONNECT
+
+JAR and WAR -war used to build webapplication
+
+
+
+----------------------------------------------
+* Spring - Configuration files + (Autoconfigurations +starters +actuators+devtools+ cloud tools +cli) = spring boot
+  Implement spring through springboot
+
+* Soringboot - ten years of sprong experience - DRY (Do not repeat yourself)
+* Spring boot = promotes agile development + dependency automatically added through starters + inuilt tomcat server + in memory database - H2db
+
+* Springboot - Microservices -> RESTful ->
+
+client-> end user Browser(user agent,proxy & server communication)-> application nd server communication http request and respose headers.
+
+
+//handler
+//endpoint
+//API -> endpoints -> API specific
+Restapi - creating endpoint - endpoints where service will be listening
+
+
+@RestController = Controller + ResponseBody (<body> what you have to enter in the body tag) , http headers - other than GET you will have body(pay load)
+
+-> We can send or write into response body using ResponseEntity class
+Controller -> commit or render views using technologies(HTML or JSP Tiles Velocity.......)
+
+
+@GetMapping - handler resource for HTTP GET requests
+	input through get method        1. query string(?name=value) is sent via requested url
+					2. main follwed by a forwrd slash(/) 
+					@PathVariable - to recieve this input
+@PostMapping- handler resource for HTTP POST requests
+@PutMapping - handler resource for HTTP PUTrequests
+@DeleteMapping- handler resource for HTTP DELETE requests
+
+
+
+
+
+
+
+
+Royfielding - rest
+Gavin King - Hibernate
+
+
+java -jar target\(jar file name)
+
+mvnw
+
+.\mvnw spring-boot:run
+mvn spring-boot:run
+
+
+the jar file created os based on th pom file below.
+
+////////////////////////////////////////////////////////
+
+@Component
+@Autowired
+@Service
+@RequestMapping
+@GetMapping
+@PostMapping
+@RequestBody
+@Configuration
+
+
+@Bean
+@PreDestroy
+@PostConstruct
+@Qualifier
+@Primary
+@PropertySource
+@Value
+
+
+JAR FILEEEEE
+______________
+
+23/7/2024
+-----------------------------------------------------------------------------------
+
+
+->>>
+Autowire -
+Autowired -
+Autoconfiguration -
+
+All steps before spring application starts
+----------------------------------------------------------------------------------
+
+Servelet study weekend
+
+----------------------------------------------------------------------------
+
+SERVLETS
+
+in short java class
+
+init() method
+service() method doGet doPost
+destroy()
+
+
+Sprimg mvc
+____________
+
+Request comes to the Dispatcher Servelet or also called FRONT CONTROLLER
+  -> Controller will be built with Interceptors
+  -> 
+
+
+ORM - Object relational mapping
+automatic mapping and converting data between oop classses and relational database.
+
+ObjECT relational impedence mismatch - Eg Hibernate
+Software layered architecture
+
+JPA - Java Persistance Api
+
+Industry standard for developing ORMs
+---------------------------------------------
+Springboot supports build jar amd war
+Maven supports jar,war and pom
+
+
+@Entity
+@Table
+@Id
+@SpringBootApplication
+DeleteMapping PutMapping
+
+------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+24/7/2024
+
+1.Swagger/Actuators/Exception - How to mapping(one to many, many to one) relationships and associations.
+2.Profiles
+3.Microservices
+
+
+Exception Hnadling
+------------------
+Cross cutting concerns of directories in enterprise application
+AOP advicers - that code will execute first
+
+@Controller
+@ControllerAdvice
+@ExceptionHnadler - Local level
+
+WE NEED Global handlers to have consistency
+
+@Controller Advice - will be at top of class or root of application
+
+WebRequest carries the output to the response body
+
+Postman ---->controller ---->service ------> global exception handler -------------> postman client
+									reponse
+
+
+----------------------------------------------
+MyErrorRe
+
+Checked exception should not reach the client
+Any class which is going to extend this class will create object of exception that is thrown
+
+@RestControllerAdvice
+@ExceptionHandler - (value =m "nullpoingter"){} handling for the nullpointer exception in the method
+@ResponseStatus
+
+3 things
+---------------
+WEneed @RestcontollerAdvice
+ResponseENtuty status class
+@We need error handler method
+
+ELK Stack Elastic search,logstash and kibana
+
+* prometheus and Grafana
+* splunk -> tool to 
+
+ACTUATORS- 
+localhost:8090/actuator/health
+		/actuator
+                /actuator/threaddump
+			/loggers
+			/info
+
+
+
+2.Profiles 
+____________
+
+Dev
+Test
+Production
+
+
+Three layers integration 
+It is a properties file
+each having different configuration
+
+application-dev.properties
+application-test.properties
+application-production.properties
+
+
+Land phone    vs  Mobile 
+_____________________________
+wired             wireless
+No UserInterface  UI
+No Apps           Apps
+Only calling      All wide features
+Not able to carry Carry around 
+		  Bluetooth
+		  Wifi
+		  Sim Card
+
+
+MICROSERVICES
+________________________..............................................
+API Gateway also known as edge service
+Port of entries
+
+2 things
+Service - springboot project application
+repository model and controller
+
+Service discovery - eureka
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+
+25/7/2024
+
+1.Cloud Gateway
+2.Cloud config
+3. OpenFeign
+4. Circuit breakers -
+
+_______
+PORTS | Registry:8761 , HelloService:8071, HelloClient:8072, Gateway: 8070
+______|
+
+config - access to specific files kept on github
+
+@EnableConfigServer
+
+
+OPenFeign
+-------------
+
+
+productservice
+
+---------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------
+26/7/2024
+
+----------------------
+->telecomm diference |
+----------------------
+microservice orchestration - linkinf services ass a workflow
+we configure circuit breaker in between
+can be implemented in miarosevcie
+automaticallyt take an alterncative when anything failes
+
+
+CIRCUIT BREAKER
+________________
+When circuit closed- all success
+when circuit open -some issues happened goes to------> halfopen state ----> if requests are going fine -> goes ot closed satate
+
+LoadBalacing
+____________
+
+one instance of an application can be run many time
+load is evenly distributed among available instances
+ 
+PROPERTY
+cloud.gateway:discovery:locator:enabled:true - to enable auto load balancing
+eureka:client:service-url:default-zone:http://localhost:8761/eureka
+
+
+GAYEWAY LOAD BALANCING
+3 services - lbeureka, lbservice, lbgateway
+
+
+
+[application name, traceId,spandId,export]
+
+Application name – This is the name we set in the properties file, and can be used to aggregate logs from multiple instances of the same application.
+TraceId – This is an id that’s assigned to a single request, job, or action. Something like each unique user initiated web request will have its own traceId.
+SpanId – Tracks a unit of work. Think of a request that consists of multiple steps. Each step could have its own spanId and be tracked individually. By default, any application flow will start with the same TraceId and SpanId.
+Export – This property is a boolean that indicates whether or not this log was exported to an aggregator like Zipkin. Zipkin is beyond the scope of this article, but plays an important role in analyzing logs created by Sleuth.
+   
+
+sleuth
+micrometer
+
+SECURITY
+_________-
+
+Web servlets
+How to write filters(filter architecture0
+
+Filter stack
+
+Servlet filters
+
+Cross Cutting Concers [CCC] 
+autheticationManager - main guard -{does authentication}
+HttpSecurity {does authorization}
+
+
+
+LDAP
+OAUTH
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------------\----------------------\
+-------------------------------------------------------------------------------------------------------------
+27/7/2024
+
+---> jdbc authentication
+----> jwt
+     extract userrname,expiration,claim,allclaim,istokenexpired,genratetoken,createtoken
+ jwts
+setSubject
+issuedat
+expiration
+signwith
+d
+
+
+JENKIN
+_______
+CICD - Continuous Integration Continuous Deployment
+
+also known as pluginbased system....
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+

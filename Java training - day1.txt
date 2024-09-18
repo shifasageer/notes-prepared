@@ -1,0 +1,254 @@
+Make a website 
+at end of the momth
+
+
+
+Building Application
+
+Framework
+Front end / UI
+Back end
+Storage
+host to serve it
+
+
+What is server ? what are different types pf server
+
+How software is converted toan image
+
+wsl
+
+middlewares :
+ibm bluemix
+tibco
+
+
+---------------------------------------------------------------------------------
+
+
+1.Phone
+
+class Phone {
+	String model;
+	String colour;
+	int storage;
+}
+
+........................................
+
+2.Perfume
+
+class Perfume {
+	String brand;
+	int quantity;
+	int odourflavour; 
+	int origin;
+}
+
+........................................     
+
+3.Diamond
+
+class Diamond {
+	String weight;
+	String origin;
+	int price;
+
+}
+
+
+
+KEYWORDS
+instanceof
+throws
+transient - used in serialization.
+default - switch case, default methods of a functional interface
+synchronized - mutex
+
+
+Onsite, Iaas,Paas, Saas
+Iaas - needed by 
+
+
+microservices
+monolith
+...................................................
+limitations of monolith -
+
+* difficult to integrate
+* scalability - not easy to scale - ability of application to perform irrespective of load
+* scaling can be of two types ...horizontal and vertical scaling
+* not easy to upgrade
+...............................
+
+SOA - Service oriented architecture
+
+
+
+Interoperability - is made possible through SOA
+SOA principles are realised and implemened using webservices.
+
+
+
+--------------------------
+Spring tool suite 
+Install JDK 21
+Install Maven 3.x
+
+--------------------------
+java docs
+--------------------------
+spring docs
+--------------------------
+
+lllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll
+
+
+
+class Eggs{
+	private String name;
+	private int qty;
+	private int expiryDays;
+	private int price;
+
+	public void Eggs() {
+	{
+	}
+
+	public void Eggs(int qty,int expiryDays,int price) {
+	{
+	}
+
+	ArrayList<Eggs> EggsArray = new ArrayList<>();
+}
+
+
+class Milk{
+	private String name;
+	private int qty;
+	private int expiryDays;
+	private int price;
+}
+
+
+class Chocolates {
+	private String name;
+	private int qty;
+	private int price;
+
+}
+
+
+class Apple {
+	private String species;
+	private int qty;
+	private int price;
+}
+
+class Bread {
+	private String name;
+	private int price;
+}
+
+
+
+
+
+class Store {
+
+	public static void main(String args[]){
+
+	ArrayList<Eggs> EggsArray = new ArrayList<>();
+	HashSet<Milk> MilkArray = new HashSet<>();
+	LinkedList<Chocolates> ChocoArray = new LinkedList<>;
+	TreeSet<Apple> AppleArray = new TreeSet<>();
+	Queue<Bread> BreadSet = new Queue<>;
+
+	EggsArray 
+	EggsArray.add("Grade1",20,15,10);
+	EggsArray.add("Grade2",20,10,7);
+	EggsArray.add("Grade3",20,7,5);
+
+	MilkArray.add("Milma",40,2,30);
+	MilkArray.add("Nestle",40,2,35);
+	MilkArray.add("PDDP",40,2,30);
+	MilkArray.add("Milma orange",40,2,35);
+	MilkArray.add("Localmilk",40,1,40);
+
+	ChocolateArray.add("Munch",30,10);
+	ChocolateArray.add("Diary Milk",20,30);
+	ChocolateArray.add("Kitkat",30,20);
+	ChocolateArray.add("Snikcers",10,20);
+	ChocolateArray.add("Bounty",30,20);
+
+	AppleArray.add("Himalayan",50,120);
+	AppleArray.add("Kashmiri",20,220);
+	AppleArray.add("Local",10,100);
+
+	BreadSet.add("
+
+
+	while(True){
+	System.out.println("Welcome to store");
+	System.out.println("1.Eggs 2.Milk 3.Chocolate 3.Apples 4.Apples 5.Bread");
+	int option;
+	
+	while(True)
+	{
+		option= sc.nextInt();
+		Switch(option) {
+		case 1 : EggsArray.display();
+		
+		case 2: MilkArray.display();
+
+		case 3: ChocolateArray.display();
+
+		case 4: AppleArray.display();
+
+		case 5: BreadSet.display();
+		}
+
+
+
+	}
+
+
+
+
+
+
+
+	}
+}
+
+
+llllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

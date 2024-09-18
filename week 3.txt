@@ -1,0 +1,186 @@
+29/7/2022
+-----------------
+
+Circuit Breaker
+_________________
+
+AOP -Aspect Oriented programming
+ping comes ready with the catch
+
+
+Chef and puppet
+
+when replicate container
+
+ - docker containerisaion
+
+bean factory and application based jdbc
+
+
+DOCKER - dockerhub -- hardware thing
+
+
+///////hub.docker.com/search?q=Spring-boot
+
+Docker steps
+0. create a new folder and switch 
+1.create a docker file in that folder // dont keep other files
+2. define all the libs/bins , 
+3. Build an image with docker file
+4. Run the image file to instantiate the container - runtime instance of an image which is based
+on Dockerfile specification.
+
+
+Docker file has two things - bringing runnables
+installing application
+running applications
+
+
+docker build .
+--------------
+docker build -t myhello:v1 .
+-------------------
+docker run myhello:v1
+--------------------
+docker images
+ 
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+30/7/2024
+
+
+1.Docker commands
+2.Docker Architecture - Docker daemon
+3.Running web site with httpd and nginx
+4.Docker hub registration with springboot
+
+
+
+
+
+
+
+docker pull nginx:1.23
+docker run nginx:1.23 
+
+
+
+docker run -d --publish 9000:80 ngimnx:1.23
+
+docker run --name web-app -d -p 9000:80 nginx:1.23
+
+
+
+
+Docker springboot Integration
+------------------------------
+step 1 . <finalname> in pom.xml "bootdocker"
+step 2 . created jar file ...maven build --> goal install ,or clean and install
+ste 3 . Dockerfile
+step 4. run program in local terminal 
+       4.1  docker build -t bootdocker:latest .
+	4.2 docker run -d -p 9001:8071 bootdocker:latest
+to run --> curl localhost:9001/rest/service/message
+
+
+------------------------------------------------------------------
+KUBERNETES
+
+Container always runs in a POD.
+Mention how many pods we want in deployment file
+Deployment can be accessed  by service]\
+
+Understands only yaml 
+Minikube --> is like a learning environement cluster with one master and one slave
+
+when client request service---- service goes to cluster---and client can access it
+
+
+------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
+
+31/7/24
+-------
+
+BOOT - Supports java development using spring framework
+MAVEN - pom is maven, building jar file, maven dependencies, helping to package project with consistent folder structure
+GIT - Code is live always
+JENKINS - Automation , Integrate and carry timly built, keep producction up to date , Continuous integration
+DOCKER - Deployment , making an image, 
+KUBERNETES -
+
+
+-----------------------------------------------------------------------------------------------------------------
+ Java Message Service(JMS)
+
+asynchrounous communication
+point to point or publish/subscribe/
+
+Message producer, and message consumer
+need not be availble..sender and consumer
+Registry based on JMS
+
+-------------------------
+Rabbit MQ
+
+---------------
+AWS Cloud
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+1/8/2024
+
+Availabilty zones 
+ intall mysqlclient in ec2 SSH.. rds in ec2...try access 
+try access database
+
+
+1.AWS EC2 what are compute services
+creting instances, security groups,keypair,inbound ports, SSH, PUTTY on windows, VPC, sunets, connecting through, rds , start , stop
+terminate
+2. USERS, Groups,roles
+3.S3 Buckets
+4. RDS
+5.iNTEGRATION EC2 and RDS
+5. Elstic beanstalk
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------
+
+2/8/2024
+________
+
+1. ElasticBeanStalk springboot deployment
+2. AWSCodeBase
+3. AWS ECR
+4. AWS Pipeline
+5. Complete AWS Pipeline 
+
+
+Pipeline 
+
+ECR
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

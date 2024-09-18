@@ -1,0 +1,22 @@
+LINKS
+
+
+1. Bean Life cycle - https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/beans/factory/BeanFactory.html
+2. Bean value from external file - https://docs.spring.io/spring-framework/reference/core/beans/factory-extension.html#beans-factory-extension-bpp-examples-aabpp
+
+3. Jana news - https://www.oracle.com/java/
+
+4. Restapi - https://www.restapitutorial.com/
+https://docs.oracle.com/javaee/6/tutorial/doc/giepu.html
+
+5.Threats - owasp.org
+6.HttpHeaders - javadocs/..
+
+7.servelet - 
+
+8. curl - dev.to/ritaly/the-simplest-guide-to-curl-for-rest-api-request-35ii
+
+6. yaml correction - yamllint
+
+
+
